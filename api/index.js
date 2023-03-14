@@ -40,6 +40,11 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
   res.status(200).json(file.filename);
 });
 
+app.get("/api", upload.single("file"), (req, res) => {
+  const file = req.file;
+  res.status(200).json({"hola": "hola"});
+});
+
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/posts", postRoutes);

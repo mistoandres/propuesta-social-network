@@ -32,11 +32,11 @@ const LeftBar = () => {
           </div>
           <div className="item">
             <img src={Friends} alt="" />
-            <span>Friends</span>
+            <span>Amigos</span>
           </div>
           <div className="item">
             <img src={Groups} alt="" />
-            <span>Groups</span>
+            <span>Grupos</span>
           </div>
           <div className="item">
             <img src={Market} alt="" />
@@ -44,27 +44,27 @@ const LeftBar = () => {
           </div>
           <div className="item">
             <img src={Watch} alt="" />
-            <span>Watch</span>
+            <span>Ver</span>
           </div>
           <div className="item">
             <img src={Memories} alt="" />
-            <span>Memories</span>
+            <span>Recuerdos</span>
           </div>
         </div>
         <hr />
         <div className="menu">
-          <span>Your shortcuts</span>
+          <span>Tus atajos</span>
           <div className="item">
             <img src={Events} alt="" />
-            <span>Events</span>
+            <span>Eventos</span>
           </div>
           <div className="item">
             <img src={Gaming} alt="" />
-            <span>Gaming</span>
+            <span>Juegos</span>
           </div>
           <div className="item">
             <img src={Gallery} alt="" />
-            <span>Gallery</span>
+            <span>Galeria</span>
           </div>
           <div className="item">
             <img src={Videos} alt="" />
@@ -72,23 +72,23 @@ const LeftBar = () => {
           </div>
           <div className="item">
             <img src={Messages} alt="" />
-            <span>Messages</span>
+            <span>Mensajes</span>
           </div>
         </div>
         <hr />
         <div className="menu">
-          <span>Others</span>
+          <span>Otros</span>
           <div className="item">
             <img src={Fund} alt="" />
-            <span>Fundraiser</span>
+            <span>Recaudación de fondos</span>
           </div>
           <div className="item">
             <img src={Tutorials} alt="" />
-            <span>Tutorials</span>
+            <span>Tutoriales</span>
           </div>
           <div className="item">
             <img src={Courses} alt="" />
-            <span>Courses</span>
+            <span>Cursos</span>
           </div>
         </div>
       </div>

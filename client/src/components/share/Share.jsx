@@ -54,7 +54,7 @@ const Share = () => {
             <img src={"/upload/" + currentUser.profilePic} alt="" />
             <input
               type="text"
-              placeholder={`What's on your mind ${currentUser.name}?`}
+              placeholder={`¿Qué tienes en mente ${currentUser.name}?`}
               onChange={(e) => setDesc(e.target.value)}
               value={desc}
             />
@@ -77,20 +77,20 @@ const Share = () => {
             <label htmlFor="file">
               <div className="item">
                 <img src={Image} alt="" />
-                <span>Add Image</span>
+                <span>Añadir imagen</span>
               </div>
             </label>
             <div className="item">
               <img src={Map} alt="" />
-              <span>Add Place</span>
+              <span>Añadir lugar</span>
             </div>
             <div className="item">
               <img src={Friend} alt="" />
-              <span>Tag Friends</span>
+              <span>Etiquetar amigos</span>
             </div>
           </div>
           <div className="right">
-            <button onClick={handleClick}>Share</button>
+            <button onClick={handleClick}>Compartir</button>
           </div>
         </div>
       </div>

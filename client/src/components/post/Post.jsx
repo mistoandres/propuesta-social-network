@@ -77,7 +77,7 @@ const Post = ({ post }) => {
           </div>
           <MoreHorizIcon onClick={() => setMenuOpen(!menuOpen)} />
           {menuOpen && post.userId === currentUser.id && (
-            <button onClick={handleDelete}>delete</button>
+            <button onClick={handleDelete}>Borrar</button>
           )}
         </div>
         <div className="content">
@@ -100,11 +100,11 @@ const Post = ({ post }) => {
           </div>
           <div className="item" onClick={() => setCommentOpen(!commentOpen)}>
             <TextsmsOutlinedIcon />
-            See Comments
+            Ver comentarios
           </div>
           <div className="item">
             <ShareOutlinedIcon />
-            Share
+            Compartir
           </div>
         </div>
         {commentOpen && <Comments postId={post.id} />}

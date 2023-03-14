@@ -8,6 +8,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LogoutIcon from "@mui/icons-material/Logout";
+import Logo from '../img/cropped-logo_positivo.png';
 import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
@@ -26,7 +27,7 @@ const Navbar = () => {
       await logout();
       navigate("/login");
     } catch (err) {
-      console.log("Logout failed with error:" + err);
+      console.log("Cierre de sesión fallido con error:" + err);
     }
   };
 
@@ -34,7 +35,12 @@ const Navbar = () => {
     <div className="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span>Buckety</span>
+        <img
+                                src={Logo}
+                                height="30"
+                                alt="Logo Pacto de Productividad"
+                                loading="lazy"
+                            />
         </Link>
         <HomeOutlinedIcon />
         {darkMode ? (
@@ -45,7 +51,7 @@ const Navbar = () => {
         <GridViewOutlinedIcon />
         <div className="search">
           <SearchOutlinedIcon />
-          <input type="text" placeholder="Search..." />
+          <input type="text" placeholder="Buscar..." />
         </div>
       </div>
       <div className="right">

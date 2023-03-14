@@ -11,6 +11,8 @@ import LeftBar from "./components/leftBar/LeftBar";
 import RightBar from "./components/rightBar/RightBar";
 import Home from "./pages/home/Home";
 import Profile from "./pages/profile/Profile";
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import "./style.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
@@ -80,13 +82,20 @@ function App() {
       path: "/login",
       element: (
         <LoggedInRoute>
+          <Header />
           <Login />
+          <Footer />
         </LoggedInRoute>
       ),
     },
     {
       path: "/register",
-      element: <Register />,
+      element: 
+      <LoggedInRoute>
+        <Header />
+        <Register />
+        <Footer />
+      </LoggedInRoute>
     },
   ]);
 

@@ -64,11 +64,11 @@ const Update = ({ setOpenUpdate, user }) => {
   return (
     <div className="update">
       <div className="wrapper">
-        <h1>Update Your Profile</h1>
+        <h1>Actualiza tu perfil</h1>
         <form>
           <div className="files">
             <label htmlFor="cover">
-              <span>Cover Picture</span>
+              <span>Imagen de portada</span>
               <div className="imgContainer">
                 <img
                   src={
@@ -88,7 +88,7 @@ const Update = ({ setOpenUpdate, user }) => {
               onChange={(e) => setCover(e.target.files[0])}
             />
             <label htmlFor="profile">
-              <span>Profile Picture</span>
+              <span>Foto de perfil</span>
               <div className="imgContainer">
                 <img
                   src={
@@ -108,45 +108,45 @@ const Update = ({ setOpenUpdate, user }) => {
               onChange={(e) => setProfile(e.target.files[0])}
             />
           </div>
-          <label>Email</label>
+          <label>Correo electrónico</label>
           <input
             type="text"
             value={texts.email}
             name="email"
             onChange={handleChange}
           />
-          <label>Password</label>
+          <label>Contraseña</label>
           <input
             type="text"
             value={texts.password}
             name="password"
             onChange={handleChange}
           />
-          <label>Name</label>
+          <label>Nombre</label>
           <input
             type="text"
             value={texts.name}
             name="name"
             onChange={handleChange}
           />
-          <label>Country / City</label>
+          <label>País / Ciudad</label>
           <input
             type="text"
             name="city"
             value={texts.city}
             onChange={handleChange}
           />
-          <label>Website</label>
+          <label>Sitio web</label>
           <input
             type="text"
             name="website"
             value={texts.website}
             onChange={handleChange}
           />
-          <button onClick={handleClick}>Update</button>
+          <button onClick={handleClick}>Actualizar</button>
         </form>
         <button className="close" onClick={() => setOpenUpdate(false)}>
-          close
+          Cerrar
         </button>
       </div>
     </div>

@@ -25,7 +25,7 @@ const Register = () => {
       await axios.post("http://localhost:8800/api/auth/register", inputs);
       navigate("/");
     } catch (err) {
-      setErr(err.response.data);
+      setErr(err.response.data.code);
     }
   };
 
@@ -36,18 +36,14 @@ const Register = () => {
       <div className="card">
         <div className="left">
           <h1>Buckety Social.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
-            alias totam numquam ipsa exercitationem dignissimos, error nam,
-            consequatur.
-          </p>
-          <span>Do you have an account?</span>
+
+          <span>¿Ya tiene una cuenta?</span>
           <Link to="/login">
-            <button>Login</button>
+            <button>Inicia sesión</button>
           </Link>
         </div>
         <div className="right">
-          <h1>Register</h1>
+          <h1>Registrarse</h1>
           <form>
             <input
               type="text"
@@ -57,24 +53,24 @@ const Register = () => {
             />
             <input
               type="email"
-              placeholder="Email"
+              placeholder="Correo electrónico"
               name="email"
               onChange={handleChange}
             />
             <input
               type="password"
-              placeholder="Password"
+              placeholder="Contraseña"
               name="password"
               onChange={handleChange}
             />
             <input
               type="text"
-              placeholder="Name"
+              placeholder="Nombre"
               name="name"
               onChange={handleChange}
             />
             {err && err}
-            <button onClick={handleClick}>Register</button>
+            <button onClick={handleClick}>Registrarse</button>
           </form>
         </div>
       </div>
